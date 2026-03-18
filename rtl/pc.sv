@@ -10,8 +10,5 @@ always_ff @(posedge clk) begin
         pc<=0;
     }else if(enb==1){
         pc<=nx_pc;
-    }else{
-        pc<=pc;
-    }
 end
 endmodule

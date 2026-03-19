@@ -6,9 +6,9 @@ module pc(
     output logic [31:0] pc
 );
 always_ff @(posedge clk) begin
-    if(!rst_n){
+    if(!rst_n)
         pc<=0;
-    }else if(enb==1){
+    else if(enb)
         pc<=nx_pc;
 end
 endmodule
